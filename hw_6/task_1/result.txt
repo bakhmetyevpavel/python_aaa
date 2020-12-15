@@ -1,0 +1,28 @@
+Trying:
+    encode('SOS')
+Expecting:
+    '... --- ...'
+ok
+Trying:
+    encode('PASHA')
+Expecting:
+    '.--. .- ... .... .-'
+ok
+Trying:
+    encode('pasha') # doctest: +IGNORE_EXCEPTION_DETAIL
+Expecting:
+    Traceback (most recent call last):
+    KeyError: 'p'
+ok
+Trying:
+    encode('PAAAAAAAASHA') # doctest: +ELLIPSIS
+Expecting:
+    '.--. ... .-'
+ok
+1 items had no tests:
+    morse_doctest
+1 items passed all tests:
+   4 tests in morse_doctest.encode
+4 tests in 2 items.
+4 passed and 0 failed.
+Test passed.
